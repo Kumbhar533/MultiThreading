@@ -36,10 +36,12 @@ class mainClass {
 		if (totalSeats >= seats) {
 
 			System.out.println("seats booked successfully");
-			System.out.println("remaining seats : " + (totalSeats - seats));
+			totalSeats = totalSeats - seats;
+			System.out.println("remaining seats : " + (totalSeats));
 		} else {
 			System.out.println("seats not booked");
-			System.out.println("remaining seats : " + (totalSeats - seats));
+
+			System.out.println("remaining seats : " + (totalSeats));
 		}
 	}
 
